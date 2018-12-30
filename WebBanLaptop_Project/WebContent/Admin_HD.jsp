@@ -294,7 +294,7 @@
                         </div>
 
                         <div class="modal-body">
-                            <form autocomplete="on" action="InsertKH" method="post" id="formAdd">
+                            <form autocomplete="on" action="InsertHD" method="post" id="formAdd">
                                 <div class="form-group row">
                                     <label for="InputMaHD" class="col-sm-3 col-form-label">Mã Hóa Đơn</label>
                                     <div class="col-sm-9">
@@ -322,7 +322,7 @@
                                 <div class="form-group row">
                                     <label for="InputNgayNhanHang" class="col-sm-3 col-form-label">Ngày giao hàng</label>
                                     <div class="col-sm-9">
-                                        <input type="number" class="form-control" id="InputNgayNhanHang" name="NgayNhanHang"
+                                        <input type="date" class="form-control" id="InputNgayNhanHang" name="NgayNhanHang"
                                             placeholder="Ngày nhận hàng">
                                     </div>
                                 </div>
@@ -377,7 +377,7 @@
                                 <div class="form-group row">
                                     <label for="InputNgayNhanHang" class="col-sm-3 col-form-label">Ngày giao hàng</label>
                                     <div class="col-sm-9">
-                                        <input type="number" class="form-control" id="InputNgayNhanHang" name="NgayNhanHang"
+                                        <input type="date" class="form-control" id="InputNgayNhanHang" name="NgayNhanHang"
                                             placeholder="Ngày nhận hàng" value="${hoadon.ngaynhanhang }">
                                     </div>
                                 </div>

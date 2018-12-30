@@ -42,7 +42,8 @@ public class InsertKH extends HttpServlet {
 	}
 	private void insertKhachHang(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException{
-		
+		response.setContentType("text/html;charset=UTF-8");
+		request.setCharacterEncoding("utf-8");
 		String MaKH = null;
 		String TenKH = request.getParameter("TenKH");
 		String DiaChi = request.getParameter("DiaChi");

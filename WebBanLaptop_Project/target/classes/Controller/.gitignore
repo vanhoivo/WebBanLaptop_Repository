@@ -13,6 +13,7 @@
 /GetHD.class
 /GetKH.class
 /GetKHClient.class
+/GetKHClientEdit.class
 /GetNV.class
 /GetSP.class
 /InsertCTHD.class

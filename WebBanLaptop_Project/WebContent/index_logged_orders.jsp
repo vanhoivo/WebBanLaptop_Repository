@@ -147,8 +147,7 @@
 						<th>Sản phẩm</th>
 						<th>Tổng tiền</th>
 					</tr>
-					</thead>
-					
+					</thead>				
 					<tbody>
 						<c:forEach var="chtd" items="${listCTHD }">
 						<tr>					

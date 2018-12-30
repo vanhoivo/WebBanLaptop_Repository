@@ -6,6 +6,7 @@ import java.sql.Date;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -46,10 +47,12 @@ public class InsertNV extends HttpServlet {
 	}
 	private void insertNhanVien(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException{
+		response.setContentType("text/html;charset=UTF-8");
+		request.setCharacterEncoding("utf-8");
 		String MaNV = request.getParameter("iptMaNV");
 		String TenNV=request.getParameter("iptTenNV");
 		boolean GioiTinh=Boolean.getBoolean(request.getParameter("iptGioiTinh"));
-		Date NgayNV= Date.valueOf(request.getParameter("iptNgayNVadd"));
+		Date NgayNV= Date.valueOf(LocalDate.now());
 		String DiaChi=request.getParameter("iptDiaChi");
 		String SoDT=request.getParameter("iptSoDT");
 		Image Hinh =null;

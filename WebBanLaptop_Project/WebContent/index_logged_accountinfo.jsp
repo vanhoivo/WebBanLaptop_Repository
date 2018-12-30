@@ -139,7 +139,7 @@
 			<h4 style="color: #CC0000;"><span class="glyphicon glyphicon-list"></span> Thông tin tài khoản</h4>
 			<hr />
 			
-            <form class="form-horizontal" action="UpdateKH" method="post">
+            <form class="form-horizontal" action="GetKHClientEdit" method="post">
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="hoten">Họ tên:</label>
                     <div class="col-sm-10">
@@ -159,7 +159,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-clabel col-sm-2" for="diachi">Địa chỉ:</label>
+                    <label class="control-label col-sm-2" for="diachi">Địa chỉ :</label>
                     <div class="col-sm-10">
                     <input type="text" class="form-control" id="diachi" placeholder="Địa chỉ" name="DiaChi" value="${khachhang.diachi }"readonly>
                     </div>

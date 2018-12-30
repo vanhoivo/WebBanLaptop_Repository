@@ -56,7 +56,7 @@ public class KHDAO {
 	}
 	
 	public void insertKhachHang(KhachHang khachhang) throws SQLException {
-		String sql="Insert into KhachHang (TenKH,DiaChi,SoDT,Email,TenDangNhap) values (N?,?,?,?,?)";
+		String sql="Insert into KhachHang (TenKH,DiaChi,SoDT,Email,TenDangNhap) values (?,?,?,?,?)";
 		conn.connect();
 		PreparedStatement statement = conn.jdbcConnection.prepareStatement(sql);
 		

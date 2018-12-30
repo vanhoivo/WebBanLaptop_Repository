@@ -44,6 +44,8 @@ public class InsertTK extends HttpServlet {
 	}
 	private  void insertTaiKhoan (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
 		
+		response.setContentType("text/html;charset=UTF-8");
+		request.setCharacterEncoding("utf-8");
 		boolean admin = false;		
 		String TenDangNhap = request.getParameter("TenDangNhap");
 		String MatKhau = request.getParameter("MatKhau");

@@ -3,6 +3,7 @@ package Controller;
 import java.io.IOException;
 import java.sql.Date;
 import java.sql.SQLException;
+import java.time.LocalDate;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -46,8 +47,8 @@ public class InsertHD extends HttpServlet {
             throws SQLException, IOException, ServletException{
 		String MaHD=null;
 		String MaKH=request.getParameter("MaKH");
-		Date NgayLapHD=Date.valueOf(request.getParameter("NgayLapHD"));
-		Date NgayGiaoHang=Date.valueOf(request.getParameter("NgayGiaoHang"));
+		Date NgayLapHD=Date.valueOf(LocalDate.now());
+		Date NgayGiaoHang=Date.valueOf(LocalDate.now());
 		float TongTien = 0;
 		
 		HoaDon hoadon = new HoaDon (MaHD,MaKH,NgayLapHD,NgayGiaoHang,TongTien);

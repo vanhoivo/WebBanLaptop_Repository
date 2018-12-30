@@ -50,6 +50,8 @@ public class InsertSP extends HttpServlet {
 	}
 	private void insertSanPham(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException{
+		response.setContentType("text/html;charset=UTF-8");
+		request.setCharacterEncoding("utf-8");
 		String MaSP = request.getParameter("MaSP");
 		String TenSP=request.getParameter("TenSP");
 		float DonGia=Float.parseFloat(request.getParameter("DonGia"));

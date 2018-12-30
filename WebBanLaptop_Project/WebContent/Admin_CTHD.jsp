@@ -294,7 +294,7 @@
                         </div>
 
                         <div class="modal-body">
-                            <form autocomplete="on" action="InsertKH" method="post" id="formAdd">
+                            <form autocomplete="on" action="InsertCTHD" method="post" id="formAdd">
                                 <div class="form-group row">
                                     <label for="InputMaHD" class="col-sm-3 col-form-label">Mã Hóa Đơn</label>
                                     <div class="col-sm-9">
